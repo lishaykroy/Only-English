@@ -21,7 +21,7 @@ export default async function Dashboard() {
                 <InfoCard icon={Clock} label="In Progress" numberOfItems={coursesInProgress.length}/>
                 <InfoCard icon={CheckCircle} label="Completed" numberOfItems={completedCourses.length} variant="success"/>
             </div>
-            <CoursesList items={[...coursesInProgress , ...completedCourses]}/>
+            <CoursesList items={[...completedCourses , ...coursesInProgress ]}/>
         </div>
     )
 } 
