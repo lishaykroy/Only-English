@@ -3,7 +3,7 @@ import { Category, Chapter, Course } from "@prisma/client";
 import { getProgress } from "@/actions/get-progress";
 
 type CourseWithProgressWithCategroy = Course & {
-    categroy: Category;
+    category: Category;
     chapters: Chapter[];
     progress: number | null;
 };
