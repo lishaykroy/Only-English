@@ -17,7 +17,7 @@ export const LandingNavbar = () => {
     const { isSignedIn } = useAuth();
 
     return (
-        <nav className="bg-[#111827] p-4 bg-transparent flex items-center justify-between">
+        <nav className="bg-[#111827] p-4 flex items-center justify-between">
             <Link href="/" className="flex items-center">
                 <h1 className={cn("text-2xl font-bold text-white" , font.className)}>
                     Only-English
