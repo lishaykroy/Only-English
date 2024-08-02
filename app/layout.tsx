@@ -5,6 +5,8 @@ import './globals.css';
 import { ToastProvider } from '@/components/providers/toaster-provider';
 import { ConfettiProvider } from '@/components/providers/confetti-provider';
 import { Button } from '@/components/ui/button';
+import { LandingNavbar } from '@/components/landing-navbar';
+import { LandingContent } from '@/components/landing-content';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,11 +23,12 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>
+        <body className={inter.className}>
           <SignedOut>
-            <Button>
-              <SignInButton mode='modal'/>
-            </Button>
+            <div className="mx-auto w-full h-full overflow-auto">
+              <LandingNavbar />
+              <LandingContent />
+            </div>
           </SignedOut>
           <SignedIn>
             <ConfettiProvider />
