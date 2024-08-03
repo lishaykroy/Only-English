@@ -13,7 +13,7 @@ export const LandingContent = () => {
         <div className="text-[#111827] font-bold py-36 text-center space-y-5">
             <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
                 <h1>
-                    The Best Platform For E-Learning
+                    The Best Platform for E-Learning
                 </h1>
             </div>
             <div className="text-sm md:text-xl font-light text-[#111827]">
